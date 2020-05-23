@@ -1,0 +1,37 @@
+<script type="text/javascript" src="jquery.js"></script>
+<div class="test-div"> Click Me</div>
+<script type="text/javascript">
+  var clickme = function() {
+    alert("I am clicked");
+  }
+
+  
+
+  $(document).ready(function() {
+    $(".test-div").on("click", clickme);
+  })
+
+
+  function callMyMethods(method1, method2) {
+    method1()
+    method2()
+  }
+
+  callMyMethods(function() {
+    alert("i m method1")
+  }, function() {
+    alert("i m method2")
+  })
+
+
+</script>
+<style type="text/css">
+  div.test-div {
+    border: 1px solid #000;
+    width: 300px;
+    height: 100px;
+  }
+</style>
+<div class="test-div"> Click Me</div>
+
+

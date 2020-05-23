@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>my first page</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      .top{
+        border: 1px solid black;
+        height: 100px;
+        text-align: center;
+        font-size: 60px;
+        font-family: serif;
+        background-color: cyan;
+      }
+      .menu-container{
+        border: 1px solid black;
+        height: 40px;
+        width: 100%;
+        background-color: #fff;
+
+      }
+      .u1{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333333;
+      }
+      .l1{
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        text-decoration: none;
+        float: left;
+        
+      }
+      .child{
+        border: 1px solid black;
+      }  
+      .left-child{
+        height: 500px;
+        float:left;
+        width:25%;
+        padding: 10px;
+        overflow: scroll;
+      }
+      .right-child{
+        float: right;
+        width: 73%;
+        height: 900px;
+      }
+      .right-n1{
+        width: 520px;
+        height: 700px;
+        margin-top: 40px;
+        margin-left: 70px;
+        padding: 20px;
+        float: left;
+      }
+      .right-n2{
+        border: 1px solid black;
+        width: 430px;
+        height: 430px;
+        margin-top: 60px;
+        margin-left: 70px;
+        padding: 20px;
+        float: left;
+      }
+      .left-child .inner {
+        border: 1px solid #000;
+        height: 1000px;
+      }
+      .n1{
+        border: 1px solid #000;
+      }
+      .b1{
+        height: 80px;
+      }
+      .b2{
+        height: 180px;
+        margin-top: 20px;
+      }
+      .b3{
+        height: 380px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top">Home Page </div>
+    <div class="menu-container">
+      <ul class="u1">
+        <li class="l1">Home</li>
+        <li class="l1">About</li>
+        <li class="l1">fAQs</li>
+        <li class="l1">Help</li>
+      </ul>
+    </div>
+    <div class="parent">
+      <div class="child left-child">
+        <div class="bottom-pad"></div>
+        <div class="inner"></div>
+      </div>
+      <div class="child right-child"><br><br>
+        <div class="right-n1">
+          <div class="n1 b1"></div>
+          <div class="n1 b2"></div>
+          <div class="n1 b3"></div>
+        </div>
+        <div class="right-n2"></div>
+      </div>
+    </div>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="my.js"></script>
+  </body>
+</html>
